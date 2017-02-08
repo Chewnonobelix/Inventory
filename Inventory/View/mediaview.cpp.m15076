@@ -1,0 +1,75 @@
+#include "mediaview.h"
+#include "ui_mediaview.h"
+
+MediaView::MediaView(MediaSPointer m, User::UserType type, QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::MediaView), l_attribute(new QVBoxLayout)
+{
+    ui->setupUi(this);
+    ui->w_name->setText(m->name());
+    Category* ouranos = m->category();
+    QScrollArea* artemis = new QScrollArea;
+    artemis->setWidget(new QWidget);
+    l_attribute = new QVBoxLayout;
+    artemis->setWidgetResizable(true);
+    artemis->widget()->setLayout(l_attribute);
+    ui->tabWidget->insertTab(0, artemis, tr("Parent"));
+    foreach(auto gaia, ouranos->values())
+    {
+        if(gaia.name() != "name")
+        {
+            m_attribute.push_back(new MediaWidget);
+            m_attribute.last()->set(gaia, m->attribute(gaia.name()));
+            l_attribute->insertWidget(l_attribute->count(), m_attribute.last());
+        }
+    }
+
+    setWindowTitle(tr("View ") + m->name());
+    if(type == User::Viewer)
+    {
+        ui->w_name->setEnabled(false);
+        for(int ouranos = 0; ouranos < m_attribute.size(); ouranos++)
+        {
+            m_attribute[ouranos]->setEnabled(false);
+        }
+    }
+
+    m_root = constructTree(m, 0);
+    ui->treeWidget->insertTopLevelItem(0, m_root);
+}
+
+MediaView::~MediaView()
+{
+    delete ui;
+}
+
+void MediaView::accept()
+{
+    qDebug()<<ui->horizontalLayout_2->itemAt(0)->widget();
+    if(ui->w_name->isEnabled())
+        emit s_send(m_attribute);
+    close();
+}
+QString MediaView::name() const
+{
+    return ui->w_name->text();
+}
+
+QTreeWidgetItem* MediaView::constructTree(MediaSPointer m, int deep)
+{
+    QTreeWidgetItem* zeus = new QTreeWidgetItem;
+    zeus->setText(0, m->name());
+    //TODO
+    zeus->setData(1,0, QVariant::fromValue(SubMedia()));
+    zeus->setData(2,0, QVariant(deep));
+
+    foreach(auto hera, m->subMedias())
+        zeus->addChild(constructTree(hera, deep+1));
+
+    return zeus;
+}
+
+void MediaView::showSub(QTreeWidgetItem*)
+{
+
+}

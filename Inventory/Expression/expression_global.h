@@ -1,0 +1,12 @@
+#ifndef EXPRESSION_GLOBAL_H
+#define EXPRESSION_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(EXPRESSION_LIBRARY)
+#  define EXPRESSIONSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define EXPRESSIONSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // EXPRESSION_GLOBAL_H

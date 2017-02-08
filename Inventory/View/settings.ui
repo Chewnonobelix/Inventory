@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QDialog" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>602</width>
+        <height>488</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>General</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Language</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="w_language">
+         <item>
+          <property name="text">
+           <string>System default</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_15">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Shortchut</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>New database</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QKeySequenceEdit" name="w_newData"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>Load database</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QKeySequenceEdit" name="w_loadData"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>Save database</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QKeySequenceEdit" name="w_saveData"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Save as database</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QKeySequenceEdit" name="w_saveAsData"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>Quit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QKeySequenceEdit" name="w_quit"/>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>See media</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QKeySequenceEdit" name="w_seeMedia"/>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Add media</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QKeySequenceEdit" name="w_addMedia"/>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Remove media</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QKeySequenceEdit" name="w_removeMedia"/>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>See category</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QKeySequenceEdit" name="w_seeCategory"/>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Add category</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QKeySequenceEdit" name="w_addCategory"/>
+       </item>
+       <item row="15" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Remove category</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="1">
+        <widget class="QKeySequenceEdit" name="w_removeCategory"/>
+       </item>
+       <item row="17" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>Search</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="1">
+        <widget class="QKeySequenceEdit" name="w_search"/>
+       </item>
+       <item row="22" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>Users</string>
+         </property>
+        </widget>
+       </item>
+       <item row="22" column="1">
+        <widget class="QKeySequenceEdit" name="w_users"/>
+       </item>
+       <item row="23" column="0">
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>Settings</string>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="1">
+        <widget class="QKeySequenceEdit" name="w_settings"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Settings</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Settings</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

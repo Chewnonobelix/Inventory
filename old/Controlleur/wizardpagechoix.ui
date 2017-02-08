@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WizardPageChoix</class>
+ <widget class="QWizardPage" name="WizardPageChoix">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WizardPage</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Type de média</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="comboBox">
+     <item>
+      <property name="text">
+       <string>Animé</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bande Dessiné</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Film</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Jeux Vidéo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Livre</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Série</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
